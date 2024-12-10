@@ -1,0 +1,97 @@
+:root{
+    --primary-color: #C4F82A;
+    --secondary-color: #FFFFFF;
+    --light-black: #333333;
+    --black: #141414;
+    --Profile-background: #1F1F1F;
+}
+/*reset default browser settings*/
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+body{
+    padding: 1rem;
+}
+
+/*profile photo and name section*/
+img{
+    border-radius: 100px;
+    width: 7.5rem;
+    margin-bottom: 1.5rem;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#name-location p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+#heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#name-location{
+    text-align: center;
+}
+
+/*main container*/
+#main-container{
+    display: inline-block;
+    margin: 5rem auto;
+    background-color: var(--Profile-background);
+    width: 26rem;
+    box-sizing: border-box;
+    padding: 2.5rem 2.5rem 1.8rem 2.5rem;
+    border-radius: 10px;
+}
+@media (max-width: 480px) {
+    #main-container{
+        width: 20rem;
+    }
+}
+
+/*buttons container*/
+#buttons{
+    display: flex;
+    flex-direction: column;
+}
+.btns{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    background-color: var(--light-black);
+    border-radius: 7px;
+    border: none;
+    transition: background-color 300ms ease, transform 200ms ease-in-out;
+    cursor: pointer;
+}
+.btns:hover{
+    background-color: var(--primary-color);
+    color: var(--black);
+}
+p{
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+#btns-container{
+    text-align: center;
+    margin-top: 2.5rem;
+}
